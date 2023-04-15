@@ -5,94 +5,98 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>TK Photography</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
             <h1>TK Photography</h1>
             <nav>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#top">Top</a></li>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#top">Top</a></li>
+                </ul>
             </nav>
         </header>
 
         <main>
             <section>
-                <h2>About</h2>
-                <p>Hello!</p>
+                <h2 id="about">About</h2>
+                <p>Hello!</p><br>
                 <p>I&#39;m TK and I&#39;m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it&#39;s taken me all over the world.</p>
             </section>
 
-            <section>
-                <h2>Gallery</h2>
+            <section class="photos">
+                <h2 id="gallery">Gallery</h2>
                 <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-                <figure>
-                    <img src="Chile.png" alt="Orange sunset at the beach with mountainside rocks on the right-hand side.">
-                    <figcaption>Chile, 2001</figcaption>
-                </figure>
+                <div class="wrapper">
+                    <figure>
+                        <img src="Chile.png" alt="Orange sunset at the beach with mountainside rocks on the right-hand side.">
+                        <figcaption>Chile, 2001</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="Guatemala.png" alt="Purple sunset at a lake with mountains on the horizon and purple flowers in the foreground to the left and right of a walking path.">
-                    <figcaption>Guatemala, 1997</figcaption>
-                </figure>
+                    <figure>
+                        <img src="Guatemala.png" alt="Purple sunset at a lake with mountains on the horizon and purple flowers in the foreground to the left and right of a walking path.">
+                        <figcaption>Guatemala, 1997</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="Hawaii.png" alt="Crystal clear ocean water with tall green mountains and white clouds above.">
-                    <figcaption>Hawaii, 2010</figcaption>
-                </figure>
+                    <figure>
+                        <img src="Hawaii.png" alt="Crystal clear ocean water with tall green mountains and white clouds above.">
+                        <figcaption>Hawaii, 2010</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="Iran.png" alt="Dry prairie landscape with red flowered bushes and tall yellow grass with mountains in the horizon.">
-                    <figcaption>Iran, 1999</figcaption>
-                </figure>
+                    <figure>
+                        <img src="Iran.png" alt="Dry prairie landscape with red flowered bushes and tall yellow grass with mountains in the horizon.">
+                        <figcaption>Iran, 1999</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="Ireland.png" alt="Bright green hills covered in tall grass and trees that are starting to turn orange.">
-                    <figcaption>Ireland, 2012</figcaption>
-                </figure>
+                    <figure>
+                        <img src="Ireland.png" alt="Bright green hills covered in tall grass and trees that are starting to turn orange.">
+                        <figcaption>Ireland, 2012</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="Italy.png" alt="Teal lagoon at the bottom of a rocky mountainside with person kayaking in the middle.">
-                    <figcaption>Italy, 2015</figcaption>
-                </figure>
+                    <figure>
+                        <img src="Italy.png" alt="Teal lagoon at the bottom of a rocky mountainside with person kayaking in the middle.">
+                        <figcaption>Italy, 2015</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="Moab-Desert.png" alt="Red and orange rocky landscape at sunset with orange skies.">
-                    <figcaption>Moab Desert, 2020</figcaption>
-                </figure>
+                    <figure>
+                        <img src="Moab-Desert.png" alt="Red and orange rocky landscape at sunset with orange skies.">
+                        <figcaption>Moab Desert, 2020</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="Rocky-Mountains.png" alt="Three tall rocky mountains in ocean with tidal waves crashing in.">
-                    <figcaption>Rocky Mountains, 2009</figcaption>
-                </figure>
+                    <figure>
+                        <img src="Rocky-Mountains.png" alt="Three tall rocky mountains in ocean with tidal waves crashing in.">
+                        <figcaption>Rocky Mountains, 2009</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="Switzerland.png" alt="Snowy mountainside with tall green pine trees looking out to other mountain tops.">
-                    <figcaption>Switzerland, 2014</figcaption>
-                </figure>
+                    <figure>
+                        <img src="Switzerland.png" alt="Snowy mountainside with tall green pine trees looking out to other mountain tops.">
+                        <figcaption>Switzerland, 2014</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="UK.png" alt="Yellow-green hills with a valley in the middle with clear blue skies.">
-                    <figcaption>UK, 2005</figcaption>
-                </figure>
+                    <figure>
+                        <img src="UK.png" alt="Yellow-green hills with a valley in the middle with clear blue skies.">
+                        <figcaption>UK, 2005</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="USA.png" alt="Green hillside slope filled with yellow and red flowers with pine trees in the distance and an orange sun coming up.">
-                    <figcaption>USA, 2021</figcaption>
-                </figure>
+                    <figure>
+                        <img src="USA.png" alt="Green hillside slope filled with yellow and red flowers with pine trees in the distance and an orange sun coming up.">
+                        <figcaption>USA, 2021</figcaption>
+                    </figure>
 
-                <figure>
-                    <img src="Wyoming.png" alt="Lake surrounded by tall green trees and in the center tall rocky and pointy mountains with clear blue skies.">
-                    <figcaption>Wyoming, 2021</figcaption>
-                </figure>
+                    <figure>
+                        <img src="Wyoming.png" alt="Lake surrounded by tall green trees and in the center tall rocky and pointy mountains with clear blue skies.">
+                        <figcaption>Wyoming, 2021</figcaption>
+                    </figure>
+                </div>
             </section>
 
-            <section>
-                <h2>Contact</h2>
+            <section class="contact">
+                <h2 id="contact">Contact</h2>
                 <p>Please fill out this form and I&#39;ll connect with you soon.</p>
-                <form>
+                <form method="GET" id="form">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your full name">
 

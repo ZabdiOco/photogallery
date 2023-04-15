@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*General layout styling*/
+html {
+    background-color: #000;
+    padding: 0px 75px;
+}
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    width:fit-content;
+}
+nav {
+    background-color: #000;
+    padding: 25px;
+}
+h1, h2, li, figcaption, label, input {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h1 {
+    font-size: 3em;
+    color: #007d7b;
+    padding-bottom: 5px;
+}
+nav li {
+    display: inline-block;
+    padding: 5px;
+}
+nav a {
+    font-size: 1.5em;
+    list-style: none;
+    color:#fff;
+    text-decoration: none;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+section {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+p{
+    font-size: 1.25em;
+    line-height: 1.5em;
+    padding-left: 10px;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+}
+.contact, footer{
+    background-color: #000;
+    color: #fff;
+}
+.contact p {
+    text-align: center;
+}
+label {
+    display: block;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+input {
+    width: 85%;
+}
+[type="text"], [type="email"] {
+    padding: 5px;
+    width: 85%;
+}
+[type="submit"] {
+    background-color:#007d7b;
+    margin-top: 20px;
+    padding: 7px;
+    color: #fff;
+    border-radius: 15px;
+    border-style: none;
+    width: 45%;
+}
+::placeholder {
+    color:#007d7b;
+}
+footer {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/*Small screen*/
+@media only screen and (min-width:485px) {
+    [href="#top"] {
+        position:fixed;
+        bottom:0px;
+        right:0px;
+        border: 2px solid #fff;
+        padding: 10px;
+    }
+    figure {
+        display: flex;
+        flex-flow:column;
+        width:90%;
+        margin:auto;
+        padding-bottom: 20px;
+    }
+    img {
+        width:auto;
+        height: auto;
+    }
+    figcaption {
+        position: absolute;
+        z-index: 1;
+        color:#fff;
+        align-self: center;
+        padding-top: 15px;
+    }
+}
+
+/*Meduim screen*/
+@media only screen and (min-width:880px) {
+    [href="#top"] {
+        visibility: hidden;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*Large screen*/
+@media only screen and (min-width:1300px) {
+    [href="#top"] {
+        visibility: hidden;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
