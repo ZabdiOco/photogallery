@@ -59,6 +59,7 @@ body {
 nav {
     background-color: #000;
     padding: 25px;
+    text-align: center;
 }
 h1, h2, li, figcaption, label, input {
     text-transform: uppercase;
@@ -68,6 +69,7 @@ h1 {
     font-size: 3em;
     color: #007d7b;
     padding-bottom: 5px;
+    text-align: center;
 }
 nav li {
     display: inline-block;
@@ -97,12 +99,19 @@ p{
 figcaption, label, input, small {
     font-size: 1em;
 }
+.whtText {
+    color: #fff;
+}
 .contact, footer{
     background-color: #000;
     color: #fff;
 }
 .contact p {
     text-align: center;
+}
+form {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 label {
     display: block;
@@ -113,7 +122,7 @@ input {
     width: 85%;
 }
 [type="text"], [type="email"] {
-    padding: 5px;
+    padding: 10px;
     width: 85%;
 }
 [type="submit"] {
@@ -123,7 +132,9 @@ input {
     color: #fff;
     border-radius: 15px;
     border-style: none;
-    width: 45%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: auto;
 }
 ::placeholder {
     color:#007d7b;
@@ -157,7 +168,6 @@ footer {
     figcaption {
         position: absolute;
         z-index: 1;
-        color:#fff;
         align-self: center;
         padding-top: 15px;
     }
@@ -165,6 +175,9 @@ footer {
 
 /*Meduim screen*/
 @media only screen and (min-width:880px) {
+    h1 {
+        text-align: justify;
+    }
     [href="#top"] {
         visibility: hidden;
     }
@@ -176,8 +189,8 @@ footer {
 
 /*Large screen*/
 @media only screen and (min-width:1300px) {
-    [href="#top"] {
-        visibility: hidden;
+    nav {
+        text-align: right;
     }
     .wrapper {
         display: grid;
